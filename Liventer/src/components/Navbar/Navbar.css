@@ -1,0 +1,83 @@
+
+
+.navbar {
+    background-color: #000000; /* Vaihda haluamasi taustaväri */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+}
+
+.navbar-brand img {
+    height: 40px; 
+}
+
+.navbar-toggler {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.toggler-icon {
+    display: inline-block;
+    width: 30px;
+    height: 2px;
+    background-color: white;
+    position: relative;
+}
+
+.toggler-icon::after,
+.toggler-icon::before {
+    content: '';
+    background-color: white;
+    width: 30px;
+    height: 2px;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+}
+
+.toggler-icon::before {
+    top: -8px;
+}
+
+.toggler-icon::after {
+    top: 8px;
+}
+
+.navbar-collapse {
+    display: none;
+    position: absolute;
+    top: 5%;
+    left: 50%; 
+}
+
+
+.navbar-collapse.expanded {
+    display: block;
+}
+
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-item {
+    margin: 0.5rem 0;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-inline-button .navbar-button {
+    text-decoration: none;
+    background-color: #007bff; 
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
