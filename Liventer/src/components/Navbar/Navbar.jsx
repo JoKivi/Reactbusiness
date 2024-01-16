@@ -11,7 +11,7 @@ function Navbar() {
         <div className="navbar">
             <div className="navbar-brand">
                 <Link to="/">
-                    <img src="/public/img/liventer_s.svg" alt="Liventer Group Logo" />
+                    <img src="/img/liventer_s.svg" alt="Liventer Group Logo" />
                 </Link>
             </div>
             <button className="navbar-toggler" onClick={handleNavCollapse}>

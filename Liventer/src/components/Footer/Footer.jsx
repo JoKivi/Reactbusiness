@@ -1,5 +1,5 @@
 import React from 'react';
-import './Footer.css'; 
+import './Footer.css';
 
 function Footer() {
     return (
@@ -18,9 +18,9 @@ function Footer() {
                 </div>
             </div>
             <div className="footer-bottom">
+                <div><strong>Liventer Group</strong> kuuluu <strong>GM Productions Oy</strong>:n alaisuuteen</div>
                 <div>&copy; 2024 Liventer Group Oy</div>
                 <div>Designed by <strong>Liventer Group Oy</strong></div>
-                <div><strong>Liventer Group</strong> kuuluu <strong>GM Productions Oy</strong>:n alaisuuteen</div>
             </div>
         </footer>
     );

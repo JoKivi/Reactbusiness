@@ -1,7 +1,7 @@
 
 
 .navbar {
-    background-color: #000000; /* Vaihda haluamasi taustaväri */
+    background-color: #000000; 
     color: white;
     display: flex;
     justify-content: space-between;
@@ -17,6 +17,14 @@
     border: none;
     background: none;
     cursor: pointer;
+}
+
+.navbar-collapse {
+    padding: 0.5rem;
+    background-color: #000000;
+    color: white;
+    left: 50%; 
+    z-index: 999;
 }
 
 .toggler-icon {
@@ -48,11 +56,10 @@
 
 .navbar-collapse {
     display: none;
-    position: absolute;
+    position:absolute;
     top: 5%;
-    left: 50%; 
+    right: 5%;     
 }
-
 
 .navbar-collapse.expanded {
     display: block;
@@ -80,4 +87,44 @@
     border-radius: 5px;
     border: none;
     cursor: pointer;
+}
+
+@media screen and (min-width: 769px) {
+    .navbar-collapse {
+        display: none;
+        position:absolute;
+        top: 5%;
+        left: 70%;  
+        align-items: center;
+        text-align: center;   
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .navbar {
+        padding: 0.5rem; 
+    }
+
+    .navbar-brand img {
+        height: 30px; 
+    }
+
+    .nav-item {
+        margin: 0.25rem 0; 
+    }
+
+    .navbar-inline-button .navbar-button {
+        padding: 0.25rem 0.5rem; 
+        font-size: 0.8rem; 
+    }
+
+
+
+    .toggler-icon {
+        width: 20px; 
+        height: 1.5px; 
+    }
+
+
 }
