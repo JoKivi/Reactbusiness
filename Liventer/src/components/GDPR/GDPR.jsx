@@ -1,22 +1,24 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './GDPR.css';
 
 function GDPR() {
-    const [showPopup, setShowPopup] = useState(true);
+    const [showPopup, setShowPopup] = useState(false);
 
-    // Evästeen tarkistus selaimesta
+    useEffect(() => {
+        // Tarkista, onko GDPR-eväste asetettu
+        const gdprCookie = document.cookie.split(';').some((item) => item.trim().startsWith('gdpr='));
+        if (!gdprCookie) {
+            setShowPopup(true); // Näytä GDPR-popup, jos ei oo evästettä
+        }
+    }, []);
 
     const handleAccept = () => {
-        // Aseta eväste
         document.cookie = "gdpr=accept; expires=Fri, 31 Dec 9999 23:59:59 GMT";
-        
-        // Piilota GDPR-popup
-        setShowPopup(false);
-
-        document.body.style.overflow = 'auto';
+        setShowPopup(false); // Piilota GDPR-popup
     };
 
-    if (!showPopup) return null;
+    if (!showPopup) return null; // Älä renderröi mitään, jos popup ei oo aktiivinen
+
 
     return (
         <div className="gdpr-container" style={{ display: 'block' }} id="gdpr-container">
