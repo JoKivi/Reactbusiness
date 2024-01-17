@@ -6,11 +6,21 @@ const services = [
     { img: "./img/tapahtumatuotanto.webp", title: "Tapahtumatuotanto" },
     { img: "./img/yritys.webp", title: "Yritystapahtumat" },
     { img: "./img/erikois.webp", title: "Erikoisohjelmat" },
-    { img: "./img/haat.webp", title: "Haat" }
+    { img: "./img/haat.webp", title: "Häät" }
 ];
 
+function convertToUrlFriendly(title) {
+    return title
+      .normalize("NFD") // Normalisoi ääkköset erillisiksi merkeiksi
+      .replace(/[\u0300-\u036f]/g, "") // Poistaa diakriittiset merkit (kuten ääkkösten aksentit)
+      .replace(/\s+/g, '-') // Korvaa välilyönnit väliviivalla
+      .replace(/[^a-z0-9\-]/gi, ''); // Poistaa kaikki muut merkit paitsi kirjaimet, numerot ja väliviivat
+  }
+  
+  
+
 function ServiceCard({ img, title }) {
-    const url = `/servicePage/${title.replace(/\s+/g, '-')}`; // Muuntaa otsikon URL-ystävälliseksi
+    const url = `/servicePage/${convertToUrlFriendly(title)}`;
 
     return (
         <a href={url} className="service-card-link">
