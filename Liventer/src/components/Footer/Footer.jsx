@@ -7,13 +7,13 @@ function Footer() {
             <div className="footer-content">
                 <div className="footer-section">
                     <div>
-                        <strong>Postiosoite:</strong> Saviontie 10 A 7, 04260 KERAVA
+                        <strong>Postiosoite:</strong> Seunalantie 9 A 7, 04200 KERAVA
                     </div>
                     <div>
                         <strong>Käyntiosoite:</strong> Kuusiaidankuja 2, Halli 14, 04260 KERAVA
                     </div>
                     <div>
-                        Y-tunnus: 2905019-1
+                        Y-tunnus: 3235195-6
                     </div>
                 </div>
             </div>
