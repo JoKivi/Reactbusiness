@@ -1,5 +1,5 @@
 import React from 'react';
-import './haat.css'; // Oletetaan, että sinulla on CSS-tiedosto nimeltä 'haat.css'
+import './Haat.css'; // Oletetaan, että sinulla on CSS-tiedosto nimeltä 'haat.css'
 
 function Haat() {
   return (
