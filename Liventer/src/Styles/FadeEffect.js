@@ -8,7 +8,6 @@ const FadeEffect = (textRef) => {
      
               const elementTop = element.getBoundingClientRect().top;
      
-              // Tarkista onko sivua vieritetty vähintään 20px
               if (window.scrollY > 0) {
                   if (elementTop < window.innerHeight && elementTop >= -50) {
                       element.classList.add('animate');

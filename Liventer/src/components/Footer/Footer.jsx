@@ -16,6 +16,12 @@ function Footer() {
                         Y-tunnus: 3235195-6
                     </div>
                 </div>
+                <div className="footer-section responsive-section">
+                    <div>
+                        <h3>Yhteistyökumppanit</h3><img src="/img/GM_productions.webp" alt="GM Logo" />
+
+                    </div>
+                </div>
             </div>
             <div className="footer-bottom">
                 <div><strong>Liventer Group</strong> kuuluu <strong>GM Productions Oy</strong>:n alaisuuteen</div>
