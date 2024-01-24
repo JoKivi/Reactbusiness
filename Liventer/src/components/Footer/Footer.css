@@ -10,16 +10,46 @@
     max-width: 800px;
     margin: auto;
     padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .footer-section div {
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
     color: white;
     font-size: 14px;
     text-align: left;
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
+}
+
+.responsive-section {
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.responsive-section img{
+    width: 30%;
+    height: auto;
 }
 
 .footer-bottom div {
+    clear: both;
     color: white;
     font-size: 14px;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-section,
+    .responsive-section {
+        flex: none;
+        width: 100%;
+    }
 }
