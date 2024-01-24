@@ -1,26 +1,37 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
+
+/* etusivun komponentit  */
 import Navbar from './components/Navbar/Navbar.jsx';
-import About from './components/about/about.jsx';
-import Footer from './components/Footer/Footer.jsx';
-import GDPR from './components/GDPR/GDPR.jsx';
 import HeroSection from './components/HeroSection/HeroSection.jsx';
-import Services from './components/Services/Services.jsx';
-import Haat from './components/Services/Haat.jsx';
+import AboutSection from './components/aboutSection/about.jsx';
+import ServicesSection from './components/ServicesSection/ServicesSection.jsx';
+import GallerySection from './components/GallerySection/GallerySection.jsx';
+import Footer from './components/Footer/Footer.jsx';
+
+/* sivut */
+const Home = () => { return <><HeroSection /><AboutSection /><ServicesSection /><GallerySection /></>}
+import Haat from './pages/Haat.jsx'
+import Gallery from './pages/Gallery.jsx';
 
 
 function App() {
+
   return (
     <Router>
       <Navbar />
-      <Routes>
-        <Route path="/src/components/Services/Haat.jsx" element={<Haat />} />
-        <Route path="/" element={<Services />} />
-      </Routes>
-      <HeroSection />
-      <About />
-      <Services />
-      <GDPR />
+      
+      <div className="main">
+        <Link to="*" /> {/* etusivu */}
+
+        <Routes>
+            <Route path='*' element={ <Home/> }/>
+            <Route path="/Haat" element={ <Haat /> } /> {/* services paths */}
+            {/* muut service Routet tähän */}
+            <Route path='/gallery' element={ <Gallery /> } /> {/* gallery path */}
+        </Routes>
+      </div>
+
       <Footer />
     </Router>
   );
