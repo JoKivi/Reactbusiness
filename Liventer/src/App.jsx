@@ -7,17 +7,17 @@ import HeroSection from './components/HeroSection/HeroSection.jsx';
 import AboutSection from './components/aboutSection/about.jsx';
 import ServicesSection from './components/ServicesSection/ServicesSection.jsx';
 import GallerySection from './components/GallerySection/GallerySection.jsx';
+import ContactSection from './components/ContactsSection/ContactsSection.jsx';
 import Footer from './components/Footer/Footer.jsx';
 
 /* sivut */
-const Home = () => { return <><HeroSection /><AboutSection /><ServicesSection /><GallerySection /></> }
+const Home = () => { return <><HeroSection /><AboutSection /><ServicesSection /><GallerySection /><ContactSection /></> }
 import DJKaraoke from './pages/DJKaraoke.jsx';
 import Yksityistilaisuudet from './pages/Yksityistilaisuudet.jsx';
 import Yritysjuhlat from './pages/Yritysjuhlat.jsx';
 import Erikoisohjelmat from './pages/Erikoisohjelmat.jsx';
 import Haat from './pages/Haat.jsx';
 import Gallery from './pages/Gallery.jsx';
-
 
 function App() {
 

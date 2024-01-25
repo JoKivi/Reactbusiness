@@ -20,16 +20,16 @@ function Navbar() {
             <div className={`navbar-collapse ${isNavCollapsed ? 'collapsed' : 'expanded'}`}>
                 <ul className="navbar-nav">
                     <li className="nav-item">
-                        <Link to="#about" className="nav-link">Tietoa</Link>
+                        <Link to="/AboutSection" className="nav-link">Tietoa</Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="#services" className="nav-link">Palvelut</Link>
+                        <Link to="/ServicesSection" className="nav-link">Palvelut</Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="#gallery" className="nav-link">Galleria</Link>
+                        <Link to="/GallerySection" className="nav-link">Galleria</Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="#contact" className="nav-link">Yhteystiedot</Link>
+                        <Link to="/ContactSection" className="nav-link">Yhteystiedot</Link>
                     </li>
                 </ul>
                 <div className="navbar-inline-button">
