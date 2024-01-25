@@ -4,8 +4,8 @@ import './services.css';
 
 const services = [
     { id:0, img: "./img/karaoke.webp", title: "DJ/Karaoke" },
-    { id:1, img: "./img/tapahtumatuotanto.webp", title: "Tapahtumatuotanto" },
-    { id:2, img: "./img/yritys.webp", title: "Yritystapahtumat" },
+    { id:1, img: "./img/yksityis.webp", title: "Yksityistilaisuudet" },
+    { id:2, img: "./img/yritys.webp", title: "Yritysjuhlat" },
     { id:3, img: "./img/erikois.webp", title: "Erikoisohjelmat" },
     { id:4, img: "./img/haat.webp", title: "Häät" }
 ];

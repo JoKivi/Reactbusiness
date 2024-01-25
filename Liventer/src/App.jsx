@@ -10,8 +10,12 @@ import GallerySection from './components/GallerySection/GallerySection.jsx';
 import Footer from './components/Footer/Footer.jsx';
 
 /* sivut */
-const Home = () => { return <><HeroSection /><AboutSection /><ServicesSection /><GallerySection /></>}
-import Haat from './pages/Haat.jsx'
+const Home = () => { return <><HeroSection /><AboutSection /><ServicesSection /><GallerySection /></> }
+import DJKaraoke from './pages/DJKaraoke.jsx';
+import Yksityistilaisuudet from './pages/Yksityistilaisuudet.jsx';
+import Yritysjuhlat from './pages/Yritysjuhlat.jsx';
+import Erikoisohjelmat from './pages/Erikoisohjelmat.jsx';
+import Haat from './pages/Haat.jsx';
 import Gallery from './pages/Gallery.jsx';
 
 
@@ -20,15 +24,19 @@ function App() {
   return (
     <Router>
       <Navbar />
-      
+
       <div className="main">
         <Link to="*" /> {/* etusivu */}
 
         <Routes>
-            <Route path='*' element={ <Home/> }/>
-            <Route path="/Haat" element={ <Haat /> } /> {/* services paths */}
-            {/* muut service Routet tähän */}
-            <Route path='/gallery' element={ <Gallery /> } /> {/* gallery path */}
+          <Route path='*' element={<Home />} />
+          <Route path='/DJKaraoke' element={<DJKaraoke />} />
+          <Route path='/Yksityistilaisuudet' element={<Yksityistilaisuudet />} />
+          <Route path='/Yritysjuhlat' element={<Yritysjuhlat />} />
+          <Route path='/Erikoisohjelmat' element={<Erikoisohjelmat />} />
+          <Route path="/Haat" element={<Haat />} />
+          {/* muut service Routet tähän */}
+          <Route path='/gallery' element={<Gallery />} /> {/* gallery path */}
         </Routes>
       </div>
 
