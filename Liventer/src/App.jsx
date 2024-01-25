@@ -17,6 +17,7 @@ import Yritysjuhlat from './pages/Yritysjuhlat.jsx';
 import Erikoisohjelmat from './pages/Erikoisohjelmat.jsx';
 import Haat from './pages/Haat.jsx';
 import Gallery from './pages/Gallery.jsx';
+import Regon from './pages/Regon.jsx';
 
 
 function App() {
@@ -29,14 +30,15 @@ function App() {
         <Link to="*" /> {/* etusivu */}
 
         <Routes>
-          <Route path='*' element={<Home />} />
+        <Route path='*' element={<Home />} />
+
           <Route path='/DJKaraoke' element={<DJKaraoke />} />
           <Route path='/Yksityistilaisuudet' element={<Yksityistilaisuudet />} />
           <Route path='/Yritysjuhlat' element={<Yritysjuhlat />} />
           <Route path='/Erikoisohjelmat' element={<Erikoisohjelmat />} />
           <Route path="/Haat" element={<Haat />} />
-          {/* muut service Routet tähän */}
-          <Route path='/gallery' element={<Gallery />} /> {/* gallery path */}
+          <Route path='/Gallery' element={<Gallery />} /> {/* gallery path */}
+          <Route path='/Regon' element={<Regon />} />
         </Routes>
       </div>
 

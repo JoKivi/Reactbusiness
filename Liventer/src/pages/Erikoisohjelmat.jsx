@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import './Pages.css';
 
 function Erikoisohjelmat() {
@@ -48,7 +49,7 @@ function Erikoisohjelmat() {
                         liitetään mukaan järjestelmään. Mukana kohde- ja efektivaloa, savukonetta käytetään
                         mahdollisuuksien mukaan.</li>
                     <br />
-                    <li><a href="regon.html"><strong>Dj Regon,</strong></a> artisti dj<br />
+                    <li><Link to="/Regon" ><strong>Dj Regon,</strong></Link> artisti dj<br />
                         Kahden vuosikymmenen kokemuksella laadukasta ja tanssittavaa yökerhomusaa ravintolaanne. Bileet
                         ovat takuuvarmat. Mukaan tarvittaessa kohde- ja efektivaloa.</li>
                     <br />

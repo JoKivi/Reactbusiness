@@ -2,7 +2,7 @@ import React from 'react';
 
 const Gallery = () => {
     return (
-        <div>
+        <div style={{backgroundColor: "#fff"}} >
             gallery
         </div>
     );
