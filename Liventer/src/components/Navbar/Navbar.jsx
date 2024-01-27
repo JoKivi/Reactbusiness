@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { animateScroll as scroll } from 'react-scroll'
-import { Link } from 'react-router-dom';
+import { Link as LinkScroll } from 'react-scroll'
+import { Link as LinkRouter } from 'react-router-dom';
 import './Navbar.css'; 
 
 function Navbar() {
@@ -11,9 +11,7 @@ function Navbar() {
     return (
         <div className="navbar">
             <div className="navbar-brand">
-                <Link to="/" onClick={ () => { scroll.scrollToTop(); } }>
-                    <img src="/img/liventer_s.svg" alt="Liventer Group Logo" />
-                </Link>
+                <LinkScroll to="heroSection" smooth={true} duration={500}><img src="/img/liventer_s.svg" alt="Liventer Group Logo" /></LinkScroll>
             </div>
             <button className="navbar-toggler" onClick={handleNavCollapse}>
                 <span className="toggler-icon"></span>
@@ -21,20 +19,20 @@ function Navbar() {
             <div className={`navbar-collapse ${isNavCollapsed ? 'collapsed' : 'expanded'}`}>
                 <ul className="navbar-nav">
                     <li className="nav-item">
-                    <Link to="/AboutSection" className="nav-link">Tietoa</Link>
+                        <LinkScroll to="about" smooth={true} duration={500}>Tietoa</LinkScroll>
                     </li>
                     <li className="nav-item">
-                        <Link to="/ServicesSection" className="nav-link">Palvelut</Link>
+                        <LinkScroll to="services" smooth={true} duration={500}>Palvelut</LinkScroll>
                     </li>
                     <li className="nav-item">
-                        <Link to="/GallerySection" className="nav-link">Galleria</Link>
+                        <LinkScroll to="gallerySection" smooth={true} duration={500}>Galleria</LinkScroll>
                     </li>
                     <li className="nav-item">
-                        <Link to="/ContactSection" className="nav-link">Yhteystiedot</Link>
+                        <LinkScroll to="contacts" smooth={true} duration={500}>Yhteystiedot</LinkScroll>
                     </li>
                 </ul>
                 <div className="navbar-inline-button">
-                    <Link to="/form" className="navbar-button">TILAA</Link>
+                    <LinkRouter to='/* entiiä mihkä menee */' className='navbar-button'>Tilaa</LinkRouter>
                 </div>
             </div>
         </div>
