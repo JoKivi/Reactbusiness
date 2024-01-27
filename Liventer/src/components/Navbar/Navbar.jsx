@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { animateScroll as scroll } from 'react-scroll'
 import { Link } from 'react-router-dom';
 import './Navbar.css'; 
 
@@ -10,7 +11,7 @@ function Navbar() {
     return (
         <div className="navbar">
             <div className="navbar-brand">
-                <Link to="/">
+                <Link to="/" onClick={ () => { scroll.scrollToTop(); } }>
                     <img src="/img/liventer_s.svg" alt="Liventer Group Logo" />
                 </Link>
             </div>
@@ -20,7 +21,7 @@ function Navbar() {
             <div className={`navbar-collapse ${isNavCollapsed ? 'collapsed' : 'expanded'}`}>
                 <ul className="navbar-nav">
                     <li className="nav-item">
-                        <Link to="/AboutSection" className="nav-link">Tietoa</Link>
+                    <Link to="/AboutSection" className="nav-link">Tietoa</Link>
                     </li>
                     <li className="nav-item">
                         <Link to="/ServicesSection" className="nav-link">Palvelut</Link>
