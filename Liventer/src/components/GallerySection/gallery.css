@@ -4,6 +4,7 @@
      background-color: #212121;
      scroll-behavior: smooth;
      padding: 70px 0;
+     overflow: hidden;
 }
 
 .gallerySliderSection {
@@ -23,7 +24,7 @@
 }
 
 .slider {
-     width: calc(250px * 12);
+     width: calc(250px * 24);
      animation: scroll 40s linear infinite;
 }
 
@@ -32,7 +33,7 @@
           transform: translateX(0);
      }
      100% {
-          transform: translateX(calc(-250px * 6));
+          transform: translateX(calc(-250px * 12));
      }
 }
 

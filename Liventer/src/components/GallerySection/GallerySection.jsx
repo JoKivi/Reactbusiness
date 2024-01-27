@@ -15,7 +15,7 @@ import img9 from '../../images/img3.webp'
 import img10 from '../../images/img4.webp'
 import img11 from '../../images/img5.webp'
 
-const gallerySectionImages = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11]
+const gallerySectionImages = [img0, img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11]
 
 const Slider = () => {
     return (
