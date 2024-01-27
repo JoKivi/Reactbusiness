@@ -3,7 +3,7 @@ import './Contacts.css';
 
 const ContactsSection = () => {
     return (
-        <div className="contacts-container">
+        <div className="contacts-container" name='contacts'>
             <div className="contact">
                 <img src="/img/Djsmiley.webp" alt="Contact 1" className="contact-image" />
                 <div className="contact-info">
