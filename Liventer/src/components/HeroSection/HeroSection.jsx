@@ -7,7 +7,7 @@ function HeroSection() {
     FadeEffect(heroTextRef);
 
     return (
-        <section className="hero" id="hero">
+        <section className="hero" id="hero" name='heroSection'>
             <div className="container">
                 <div className="hero-text fade-zoom-in" ref={heroTextRef}>
                     <h2 className="hero-subtitle">Tapahtumat toiveidesi mukaan</h2>
