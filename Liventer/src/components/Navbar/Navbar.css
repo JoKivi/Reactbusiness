@@ -23,11 +23,12 @@
 }
 
 .navbar-collapse {
+    cursor: pointer;
     padding: 0.5rem;
     background-color: #000000;
     color: white;
     left: 50%; 
-    z-index: 999;
+    z-index: 10;
 }
 
 .toggler-icon {
@@ -82,6 +83,12 @@
     text-decoration: none;
 }
 
+.navbar-collapse .nav-item:hover {
+    background-color: #f0f0f0; 
+    color: #000; 
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
 .navbar-inline-button .navbar-button {
     text-decoration: none;
     background-color: #007bff; 
@@ -90,6 +97,14 @@
     border-radius: 5px;
     border: none;
     cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; 
+
+}
+
+.navbar-button:hover {
+    background-color: #fff; 
+    color: #000; 
+    border-color: #000; 
 }
 
 @media screen and (min-width: 769px) {
