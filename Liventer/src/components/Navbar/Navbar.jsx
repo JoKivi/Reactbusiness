@@ -11,7 +11,7 @@ function Navbar() {
     return (
         <div className="navbar">
             <div className="navbar-brand">
-                <LinkScroll to="heroSection" smooth={true} duration={500}><img src="/img/liventer_s.svg" alt="Liventer Group Logo" /></LinkScroll>
+                <LinkRouter to="/" smooth={true} duration={500}><img src="/img/liventer_s.svg" alt="Liventer Group Logo" /></LinkRouter>
             </div>
             <button className="navbar-toggler" onClick={handleNavCollapse}>
                 <span className="toggler-icon"></span>
