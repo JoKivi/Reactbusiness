@@ -28,7 +28,7 @@ const ContactsSection = () => {
                     <h2>KIMMO LUOKKANEN</h2>
                     <p><strong>Aluevastaava pohjoinen</strong></p>
                     <p>kimmo.luokkanen@liventer.fi</p>
-                    <p>+358050 3823 211</p>
+                    <p>+358 050 3823 211</p>
                 </div>
             </div>
         </div>
