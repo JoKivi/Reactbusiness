@@ -1,7 +1,7 @@
 import React, { useState, useTransition } from 'react';
 import { BsArrowLeftShort, BsArrowRightShort } from "react-icons/bs";
 import { IoMdClose } from "react-icons/io";
-import './galleryPage.css'
+import '../Styles/galleryPage.css'
 
 import img0 from '../images/img0.webp'
 import img1 from '../images/img1.webp'

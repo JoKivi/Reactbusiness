@@ -1,5 +1,5 @@
 import React from 'react';
-import './Pages.css';
+import '../Styles/Pages.css';
 
 function DJKaraoke() {
     return (

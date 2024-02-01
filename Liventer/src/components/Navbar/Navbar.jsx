@@ -32,7 +32,7 @@ function Navbar() {
                     </li>
                 </ul>
                 <div className="navbar-inline-button">
-                    <LinkRouter to='/* entiiä mihkä menee */' className='navbar-button'>Tilaa</LinkRouter>
+                    <LinkRouter to='/src/pages/ContactForm.jsx' className='navbar-button'>Tilaa</LinkRouter>
                 </div>
             </div>
         </div>

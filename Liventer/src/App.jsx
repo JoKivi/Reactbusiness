@@ -19,6 +19,7 @@ import Erikoisohjelmat from './pages/Erikoisohjelmat.jsx';
 import Haat from './pages/Haat.jsx';
 import Gallery from './pages/Gallery.jsx';
 import Regon from './pages/Regon.jsx';
+import ContactForm from './pages/ContactForm.jsx';
 
 function App() {
 
@@ -39,6 +40,7 @@ function App() {
           <Route path="/Haat" element={<Haat />} />
           <Route path='/Gallery' element={<Gallery />} /> {/* gallery path */}
           <Route path='/Regon' element={<Regon />} />
+          <Route path='/ContactForm' element={<ContactForm />} />
         </Routes>
       </div>
 
