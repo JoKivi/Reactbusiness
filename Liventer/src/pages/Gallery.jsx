@@ -1,4 +1,4 @@
-import React, { useState, useTransition } from 'react';
+import React, { useState, useTransition, useEffect } from 'react';
 import { BsArrowLeftShort, BsArrowRightShort } from "react-icons/bs";
 import { IoMdClose } from "react-icons/io";
 import '../Styles/galleryPage.css'
@@ -43,6 +43,25 @@ const Gallery = () => {
         if ( slideNumber === EXAMPLEgallerySectionImages.length - 1 ) { setSlideNumber( 0 ) }
         else { setSlideNumber( slideNumber + 1 )}
     }
+
+    useEffect(() => {
+        const handleKeyDown = (e) => {
+            if (!openSlider) return; // Jos slider ei ole avoinna, ei tehdä mitään
+            if (e.key === 'ArrowLeft') {
+                showPrevImg();
+            } else if (e.key === 'ArrowRight') {
+                showNextImg();
+            } else if (e.key === 'Escape') {
+                setOpenSlider(false);
+            }
+        };
+
+        window.addEventListener('keydown', handleKeyDown);
+
+        return () => {
+            window.removeEventListener('keydown', handleKeyDown);
+        };
+    }, [openSlider, slideNumber]);
 
     return (
         <div className='galleryPage'>

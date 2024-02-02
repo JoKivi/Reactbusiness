@@ -9,7 +9,7 @@ const FadeEffect = (textRef) => {
               const elementTop = element.getBoundingClientRect().top;
      
               if (window.scrollY > 0) {
-                  if (elementTop < window.innerHeight && elementTop >= -50) {
+                  if (elementTop < window.innerHeight && elementTop >= 0) {
                       element.classList.add('animate');
                   } else {
                       element.classList.remove('animate');
