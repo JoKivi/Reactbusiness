@@ -5,7 +5,7 @@ const ContactsSection = () => {
     return (
         <div className="contacts-container" name='contacts'>
             <div className="contact">
-                <img src="/img/Djsmiley.webp" alt="Contact 1" className="contact-image" />
+                <img src="/img/Okko.webp" alt="Contact 1" className="contact-image" />
                 <div className="contact-info">
                     <h2>OKKO IKONEN</h2>
                     <p><strong>Toimitusjohtaja</strong></p>
@@ -25,7 +25,7 @@ const ContactsSection = () => {
                 </div>
             </div>
             <div className="contact">
-                <img src="/img/Djsmiley.webp" alt="Contact 2" className="contact-image" />
+                <img src="/img/Kimmo.webp" alt="Contact 2" className="contact-image" />
                 <div className="contact-info">
                     <h2>KIMMO LUOKKANEN</h2>
                     <p><strong>Aluevastaava pohjoinen</strong></p>
