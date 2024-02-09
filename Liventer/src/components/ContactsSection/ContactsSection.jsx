@@ -24,7 +24,7 @@ const ContactsSection = () => {
                     <p>+358 40 5455 417</p>
                 </div>
             </div>
-            <div className="contact">
+            {/* <div className="contact">
                 <img src="/img/Kimmo.webp" alt="Contact 2" className="contact-image" />
                 <div className="contact-info">
                     <h2>KIMMO LUOKKANEN</h2>
@@ -33,7 +33,8 @@ const ContactsSection = () => {
                     <p>kimmo.luokkanen@liventer.fi</p>
                     <p>+358 050 3823 211</p>
                 </div>
-            </div>
+            </div> */}
+            
         </div>
     );
 }
