@@ -1,6 +1,7 @@
 .services-container {
     padding: 5%;
-    background-color: gray;
+    color: antiquewhite;
+    background-color: #050101;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;

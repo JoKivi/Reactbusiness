@@ -18,7 +18,7 @@ function Footer() {
                 </div>
                 <div className="footer-section responsive-section">
                     <div>
-                        <h3>Yhteistyökumppanit</h3><img src="/img/GM_productions.webp" alt="GM Logo" />
+                        <img src="/img/GM_productions.webp" alt="GM Logo" />
 
                     </div>
                 </div>
