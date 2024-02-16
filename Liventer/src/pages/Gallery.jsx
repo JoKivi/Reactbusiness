@@ -1,33 +1,15 @@
-import React, { useState, useTransition, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
+import { storage } from '../firebase';
+import { ref, listAll, getDownloadURL } from 'firebase/storage';
 import { BsArrowLeftShort, BsArrowRightShort } from "react-icons/bs";
 import { IoMdClose } from "react-icons/io";
 import '../Styles/galleryPage.css'
 
-import img0 from '../images/img0.webp'
-import img1 from '../images/img1.webp'
-import img2 from '../images/img2.webp'
-import img3 from '../images/img3.webp'
-import img4 from '../images/img4.webp'
-import img5 from '../images/img5.webp'
-import img6 from '../images/img0.webp'
-import img7 from '../images/img1.webp'
-import img8 from '../images/img2.webp'
-import img9 from '../images/img3.webp'
-import img10 from '../images/img4.webp'
-import img11 from '../images/img5.webp'
-import img12 from '../images/img0.webp'
-import img13 from '../images/img1.webp'
-import img14 from '../images/img2.webp'
-import img15 from '../images/img3.webp'
-import img16 from '../images/img4.webp'
-import img17 from '../images/img5.webp'
-
-/* kun yhteydessä databaseen, lähtee tämä kuvien importtaus hässäkkä */
-const EXAMPLEgallerySectionImages = [img0, img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13, img14, img15, img16, img17]
 
 const Gallery = () => {
     const [openSlider, setOpenSlider] = useState(false);
     const [slideNumber, setSlideNumber] = useState(0)
+    const [imagesList, setImagesList] = useState([]);
 
     const handleOpenSlider = (imgIndex) => {
         setOpenSlider(true);
@@ -35,12 +17,12 @@ const Gallery = () => {
     }
 
     const showPrevImg = () => {
-        if ( slideNumber === 0 ) { setSlideNumber( EXAMPLEgallerySectionImages.length - 1 ) }
+        if ( slideNumber === 0 ) { setSlideNumber( imagesList.length - 1 ) }
         else { setSlideNumber( slideNumber - 1 )}
     }
 
     const showNextImg = () => {
-        if ( slideNumber === EXAMPLEgallerySectionImages.length - 1 ) { setSlideNumber( 0 ) }
+        if ( slideNumber === imagesList.length - 1 ) { setSlideNumber( 0 ) }
         else { setSlideNumber( slideNumber + 1 )}
     }
 
@@ -63,12 +45,24 @@ const Gallery = () => {
         };
     }, [openSlider, slideNumber]);
 
+    const imageListRef = ref(storage, "liventer-images/")
+
+    useEffect(() => {
+        listAll(imageListRef).then((res) => {
+            res.items.forEach((img) => {
+                getDownloadURL(img).then((url) => {
+                    setImagesList((prev) => [...prev, url]);
+                })
+            })
+        });
+    }, []);
+
     return (
         <div className='galleryPage'>
             <h2>Galleria</h2>
             { openSlider &&
                 <div className="sliderWrap">
-                    <img src={EXAMPLEgallerySectionImages[slideNumber]}/>
+                    <img src={imagesList[slideNumber]}/>
 
                     <div className="gallerySliderNavs">
                         <BsArrowLeftShort className='gallerySliderNav' onClick={ () => showPrevImg() } />
@@ -80,7 +74,7 @@ const Gallery = () => {
 
             <div className="galleryWrap">
                 {
-                    EXAMPLEgallerySectionImages.map((img, imgIndex) => 
+                    imagesList.map((img, imgIndex) => 
                         <a key={imgIndex}  onClick={() => handleOpenSlider(imgIndex)}><img src={img}/></a>
                     )
                 }
