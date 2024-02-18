@@ -13,6 +13,7 @@ function Navbar() {
     const scrollTarget = (target) => scroller.scrollTo(target, {smooth: true, duration: 700 });
 
     const scrollToPage = async (target) => {
+        window.innerWidth < 1150 ? setShowNav(false) : setShowNav(true)
         if (location.pathname !== '/' ) {
             await navigate('/');
         }
@@ -20,6 +21,7 @@ function Navbar() {
     };
 
     window.addEventListener('resize', () => window.innerWidth > 1150 ? setShowNav(true) : setShowNav(false) )
+    window.addEventListener('load', () => window.innerWidth > 1150 ? setShowNav(true) : setShowNav(false) )
 
     return (
         <div className="navbar">
@@ -33,11 +35,11 @@ function Navbar() {
             <ul className='nav-list' 
                 style={ showNav ? {'display':'flex'} : {'display':'none'} }
             >
-                <li onClick={() => { scrollToPage('about'), setShowNav(false) } }>Tietoa</li>
-                <li onClick={() => { scrollToPage('services'), setShowNav(false) }}>Palvelut</li>
-                <li onClick={() => { scrollToPage('gallerySection'), setShowNav(false) }}>Galleria</li>
-                <li onClick={() => { scrollToPage('contact'), setShowNav(false) }}>Yhteystiedot</li>
-                <button onClick={() => { navigate('/ContactForm'), setShowNav(false) }}>Tilaa</button>
+                <li onClick={() => scrollToPage('about') }>Tietoa</li>
+                <li onClick={() => scrollToPage('services') }>Palvelut</li>
+                <li onClick={() => scrollToPage('gallerySection') }>Galleria</li>
+                <li onClick={() => scrollToPage('contact') }>Yhteystiedot</li>
+                <button onClick={() => navigate('/ContactForm') }>Tilaa</button>
             </ul>
         </div>
     );

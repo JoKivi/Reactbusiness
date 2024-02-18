@@ -3,7 +3,7 @@
      height: 400px;
      background-color: #212121;
      scroll-behavior: smooth;
-     padding: 5px 0;
+     height: 600px;
      overflow: hidden;
 }
 
@@ -18,7 +18,7 @@
 }
 
 .gallerySliderSection img {
-     height: 90%;
+     height: 50%;
      margin: 0 10px;
      border-radius: 10px;
 }
@@ -83,7 +83,6 @@
      }
 
      .gallerySliderSection img {
-          height: 95%;
           margin: 0 5px;
      }
 

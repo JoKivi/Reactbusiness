@@ -1,7 +1,14 @@
+.contact-form-container {
+  width: 100%;
+  padding-top: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .contact-form {
+  width: 400px;
   max-width: 500px;
-  margin: auto;
-  margin-top: 100px;
   padding: 20px;
   background: #f3f3f3;
   border-radius: 10px;
@@ -45,7 +52,7 @@ button[type="submit"]:hover {
 
 @media (max-width: 767px) {
   .contact-form {
-      padding: 15px; 
+      width: 90%;
   }
 
 
