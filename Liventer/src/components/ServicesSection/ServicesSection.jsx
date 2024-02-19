@@ -3,11 +3,15 @@ import { Link } from 'react-router-dom'
 import './services.css';
 
 const services = [
-    { id:0, img: "./img/karaoke.webp", title: "DJ/Karaoke" },
-    { id:1, img: "./img/yksityis.webp", title: "Yksityistilaisuudet" },
-    { id:2, img: "./img/yritys.webp", title: "Yritysjuhlat" },
-    { id:3, img: "./img/erikois.webp", title: "Erikoisohjelmat" },
-    { id:4, img: "./img/haat.webp", title: "Häät" }
+    { id:0, img: "./img/esitystekniikka.webp", title: "Esitystekniikka" },
+    { id:1, img: "./img/erikois.webp", title: "Erikoisohjelmat" },
+    { id:2, img: "./img/yksityis.webp", title: "Yksityistilaisuudet" },
+    { id:3, img: "./img/yksityis.webp", title: "Bändit" },
+    { id:4, img: "./img/karaoke.webp", title: "DJ/Karaoke" },
+    { id:5, img: "./img/haat.webp", title: "Frat Party" },
+    { id:6, img: "./img/haat.webp", title: "Häät" },
+    { id:7, img: "./img/juhlatilat.webp", title: "Juhlatilat" }
+
 ];
 
 const Services = () => {

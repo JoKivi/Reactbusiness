@@ -36,35 +36,40 @@ function Erikoisohjelmat() {
                 <p><strong>ERIKOISOHJELMIA</strong></p>
                 <ul>
                     <br />
+                    <li><strong>Frat Party</strong><br />
+
+                    </li>
+                    <br />
+                    <li><strong>Glow</strong><br />
+
+                    </li>
+                    <br />
                     <li><strong>Ysäri-Pois</strong><br />
                         Kahden DJ:n erikoisohjelma, jossa soitetaan parasta ysärimusaa kahden soittajan battlena,
                         vuorotellen ja yhdessä. Paljon spiikkiä ja juontamista, toiveita otetaan vastaan ja yleisö on
                         varmasti mukana. Kaksi tiskijukkaa, kohde- ja efektivaloa, soittimet, mikrofonit yms.
                         laitteisto. Käytetään talon äänentoistoa, mutta tarvittaessa tuodaan oma äänentoisto paikalle.
-                        Mahdollisuuksien mukaan käytetään myös savukonetta.</li>
+                        Mahdollisuuksien mukaan käytetään myös savukonetta.
+                    </li>
                     <br />
                     <li><strong>Video-disco</strong><br />
                         Musiikki soitetaan laadukkaiden videoiden kera. Käytännössä toteutetaan siten, että paikalle
                         tuodaan yksi tai useampi iso tv-näyttö, vähintään 70 tuumainen. Lisäksi ravintolan omat näytöt
                         liitetään mukaan järjestelmään. Mukana kohde- ja efektivaloa, savukonetta käytetään
-                        mahdollisuuksien mukaan.</li>
+                        mahdollisuuksien mukaan.
+                    </li>
                     <br />
-                    <li><Link to="/Regon" ><strong>Dj Regon,</strong></Link> artisti dj<br />
+                    <li><Link to="/Regon" ><strong>Regon Rave</strong></Link><br />
                         Kahden vuosikymmenen kokemuksella laadukasta ja tanssittavaa yökerhomusaa ravintolaanne. Bileet
-                        ovat takuuvarmat. Mukaan tarvittaessa kohde- ja efektivaloa.</li>
+                        ovat takuuvarmat. Mukaan tarvittaessa kohde- ja efektivaloa.
+                    </li>
                     <br />
                     <li><strong>dj Kimble</strong><br />
                         Ysäribileet, spiikkausta ja juontoa vankalla kokemuksella. Myös erilaiset juontotehtävät
-                        tilaisuuteen kuin tilaisuuteen suomeksi, ruotsiksi ja englanniksi, jopa saksaksi.</li>
-                    <br />
-                    <li><strong>Afterski-party</strong><br />
-                        Bileet afterski-tilaisuuksiin yhden tai kahden tiskijukan voimin. Myös rinne-disco onnistuu
-                        tällä kokoonpanolla. Musiikki on afterski- hengessä hupaisaa ja hauskaa, ja porukka laulaa
-                        mukana. <br />
-                        <br />
-                        Mukana kohde- ja efektivaloa. Talon äänentoisto, tarvittaessa tuodaan mukaan oma iso
-                        äänentoisto, ja rinne-discoon voidaan rakentaa sopiva äänentoisto paikan päälle.
+                        tilaisuuteen kuin tilaisuuteen suomeksi, ruotsiksi ja englanniksi, jopa saksaksi.
                     </li>
+                    <br />
+
                     <br />
                     <li><strong>The Sinkkubileet</strong><br />
                         Järjestämme ravintolaanne isot sinkku-bileet yhdessä paikallisten opiskelijajärjestöjen kanssa.
@@ -72,12 +77,8 @@ function Erikoisohjelmat() {
                         koosta 1–3 soittajaa ja juontaja/houst Kilpailuissa upeat palkinnot ja kalenterivuoden
                         sinkkubileet huipentuvat yhteen isoon sinkkubile-tapahtumaan! Tervetuloa viihtymään ja
                         pariutumaan. Käytämme talon äänentoistoa ja valojärjestelmiä. Valaistukseen tuomme mukaan kohde-
-                        ja efektivaloa.</li>
-                    <br />
-                    <li><strong>Karaoke-kisa</strong><br />
-                        Järjestämme yhteistyökumppaneiden kanssa koko Suomen kattavan karaokekisan. Parhaat laulajat
-                        osallistuvat loppukilpailuun ja palkitaan upeilla palkinnoilla. Tervetuloa laulamaan ja
-                        voittamaan!</li>
+                        ja efektivaloa.
+                    </li>
                 </ul>
             </div>
         </div>
