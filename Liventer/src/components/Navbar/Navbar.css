@@ -1,148 +1,92 @@
 .navbar {
-    background-color: #000000; 
-    color: white;
+    width: 100%;
+    padding: 20px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5rem 1rem;
 
-    position: fixed; /* pitää navbar ylhäällä scrollatessa */
+    position: fixed;
     top: 0;
     z-index: 2;
-    width: 100%;
+    background-color: #131313;
 }
 
-.navbar-brand img {
-    height: 40px; 
-}
-
-.navbar-toggler {
-    border: none;
-    background: none;
-    cursor: pointer;
-}
-
-.navbar-collapse {
-    cursor: pointer;
-    padding: 0.5rem;
-    background-color: #000000;
-    color: white;
-    left: 50%; 
-    z-index: 10;
-}
-
-.toggler-icon {
-    display: inline-block;
-    width: 30px;
-    height: 2px;
-    background-color: white;
-    position: relative;
-}
-
-.toggler-icon::after,
-.toggler-icon::before {
-    content: '';
-    background-color: white;
-    width: 30px;
-    height: 2px;
-    display: inline-block;
-    position: absolute;
-    left: 0;
-}
-
-.toggler-icon::before {
-    top: -8px;
-}
-
-.toggler-icon::after {
-    top: 8px;
-}
-
-.navbar-collapse {
+.show-nav-manage {
     display: none;
-    position:absolute;
-    top: 5%;
-    right: 5%;     
 }
 
-.navbar-collapse.expanded {
-    display: block;
+.navbar .show-nav-manage {
+    .icon {
+        color: #fff;
+        font-size: 2em;
+    }
 }
 
-.navbar-nav {
+.navbar .logo img {
+    width: 500px;
+}
+
+.navbar  .nav-list {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 1.2em;
+}
+
+.navbar  .nav-list li {
+    color: #fff;
     list-style: none;
-    padding: 0;
+}
+.navbar  .nav-list button {
+    color: #fff;
+    background-color: #008cff;
+    padding: 5px 15px;
+    border: 1px solid #8ac0ff;
+    border-radius: 10px;
+
+    font-size: 1.1em;
 }
 
-.nav-item {
-    margin: 0.5rem 0;
+.nav-manage {
+    display: none;
 }
 
-.nav-link {
-    color: white;
-    text-decoration: none;
-}
+@media screen and (max-width: 1150px) {
+    .navbar .nav-list {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        padding: 100px 0;
 
-.navbar-collapse .nav-item:hover {
-    background-color: #f0f0f0; 
-    color: #000; 
-    transition: background-color 0.3s ease, color 0.3s ease; 
-}
+        background-color: #131313;
 
-.navbar-inline-button .navbar-button {
-    text-decoration: none;
-    background-color: #007bff; 
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; 
-
-}
-
-.navbar-button:hover {
-    background-color: #fff; 
-    color: #000; 
-    border-color: #000; 
-}
-
-@media screen and (min-width: 769px) {
-    .navbar-collapse {
-        display: none;
-        position:absolute;
-        top: 5%;
-        left: 70%;  
         align-items: center;
-        text-align: center;   
-    }
-}
+        justify-content: center;
 
-
-@media screen and (max-width: 480px) {
-    .navbar {
-        padding: 0.5rem; 
-    }
-
-    .navbar-brand img {
-        height: 30px; 
+        position: absolute;
+        z-index: -2;
+        top: 0;
+        left: 0;
+        right: 0;
     }
 
-    .nav-item {
-        margin: 0.25rem 0; 
+    .navbar .nav-list li, .navbar .nav-list button {
+        margin: 20px 0;
     }
 
-    .navbar-inline-button .navbar-button {
-        padding: 0.25rem 0.5rem; 
-        font-size: 0.8rem; 
+    .navbar .logo img {
+        width: 300px;
     }
-
-
-
-    .toggler-icon {
-        width: 20px; 
-        height: 1.5px; 
+    
+    .nav-manage {
+        display: flex;
+        .icon {
+            color: #fff;
+            font-size: 2em;
+        }
     }
-
 
 }
