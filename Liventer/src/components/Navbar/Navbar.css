@@ -1,7 +1,6 @@
 .navbar {
     width: 100%;
     padding: 20px;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,6 +27,7 @@
 }
 
 .navbar  .nav-list {
+
     width: 500px;
     display: flex;
     justify-content: space-between;
@@ -37,10 +37,14 @@
 }
 
 .navbar  .nav-list li {
+    cursor: pointer;
+
     color: #fff;
     list-style: none;
 }
 .navbar  .nav-list button {
+    cursor: pointer;
+
     color: #fff;
     background-color: #008cff;
     padding: 5px 15px;
