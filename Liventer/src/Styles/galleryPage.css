@@ -46,12 +46,12 @@
    }
    
    .sliderWrap {
-    height: 90vh;
+    height: 100vh;
     width: 100%;
 
     position: absolute;
     z-index: 1;
-    top: 0;
+    top: 7%;
     left: 0;
     right: 0;
     bottom: 0;
@@ -65,8 +65,8 @@
    }
    
    .sliderWrap img{
-     width: 600px;
-     max-height: 100%;
+     width: auto;
+     max-height: 80%;
      border-radius: 10px;
      border: 1px solid #fff;
    }
@@ -74,7 +74,7 @@
    .gallerySliderNav {
      color: #fff;
      font-size: 3em;
-     background-color: rgba(255, 255, 255, 0.2);
+     background-color: rgb(58, 58, 58);
      border: 1px solid #fff;
      border-radius: 50%;
      padding: 5px;
