@@ -39,7 +39,7 @@ function Navbar() {
                 <li onClick={() => scrollToPage('services') }>Palvelut</li>
                 <li onClick={() => scrollToPage('gallerySection') }>Galleria</li>
                 <li onClick={() => scrollToPage('contact') }>Yhteystiedot</li>
-                <button onClick={() => navigate('/ContactForm') }>Tilaa</button>
+                <button onClick={() => {navigate('/ContactForm'), window.innerWidth < 1150 ? setShowNav(false) : setShowNav(true)} }>Tilaa</button>
             </ul>
         </div>
     );
