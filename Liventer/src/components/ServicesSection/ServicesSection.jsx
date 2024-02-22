@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import './servicesSection.css';
+import './ServicesSection.css';
 
 const services = [
     { id:0, img: "./img/esitystekniikka.webp", title: "Esitystekniikka" },
