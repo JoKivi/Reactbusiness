@@ -21,6 +21,9 @@
         font-size: 2em;
     }
 }
+.navbar .logo {
+    cursor: pointer;
+}
 
 .navbar .logo img {
     width: 500px;
