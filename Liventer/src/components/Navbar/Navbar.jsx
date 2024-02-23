@@ -20,12 +20,16 @@ function Navbar() {
         scrollTarget(target);
     };
 
+    const handleLogoClick = () => {
+        navigate('/'); 
+    };
+
     window.addEventListener('resize', () => window.innerWidth > 1150 ? setShowNav(true) : setShowNav(false) )
     window.addEventListener('load', () => window.innerWidth > 1150 ? setShowNav(true) : setShowNav(false) )
 
     return (
         <div className="navbar">
-            <div className="logo">
+            <div className="logo" onClick={handleLogoClick}>
                 <img src="/img/liventer_s.svg" alt="Liventer Group Logo" />
             </div>
             <div className="nav-manage">
