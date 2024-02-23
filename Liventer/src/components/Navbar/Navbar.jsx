@@ -7,7 +7,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import { RxHamburgerMenu } from "react-icons/rx";
 
 function Navbar() {
-    const [ showNav, setShowNav ] = useState(false)
+    const [ showNav, setShowNav ] = useState(true)
     const navigate = useNavigate();
     const location = useLocation();
     const scrollTarget = (target) => scroller.scrollTo(target, {smooth: true, duration: 700 });
