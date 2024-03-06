@@ -1,0 +1,28 @@
+  .collaborators-container {
+      background-color: #050101;
+      padding: 20px;
+      text-align: center;
+  }
+
+  .title-container {
+      margin-bottom: 3%;
+      color: white;
+  }
+
+  .logos-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+  }
+
+  .logo-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .logo {
+      max-width: 100%;
+      max-height: 200px;
+  }

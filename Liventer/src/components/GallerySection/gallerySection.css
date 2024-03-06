@@ -12,20 +12,24 @@
      height: 100%;
      display: flex;
      align-items: center;
-     justify-content: center;
+     justify-content: flex-start;
      overflow: hidden;
      position: relative;
 }
 
 .gallerySliderSection img {
-     height: 50%;
+     width: 250px;  
+     height: 50%; 
+     object-fit: cover;
      margin: 0 10px;
      border-radius: 10px;
-}
+ }
+ 
 
 .slider {
-     width: calc(250px * 24);
-     animation: scroll 40s linear infinite;
+     width: calc(270px * 18);
+     display: flex;
+     animation: scroll 8s linear infinite;
 }
 
 @keyframes scroll {
@@ -33,7 +37,7 @@
           transform: translateX(0);
      }
      100% {
-          transform: translateX(calc(-250px * 12));
+          transform: translateX(calc(-270px * 6));
      }
 }
 

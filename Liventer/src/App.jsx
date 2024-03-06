@@ -8,10 +8,11 @@ import AboutSection from './components/aboutSection/about.jsx';
 import ServicesSection from './components/ServicesSection/ServicesSection.jsx';
 import GallerySection from './components/GallerySection/GallerySection.jsx';
 import ContactSection from './components/ContactsSection/ContactsSection.jsx';
+import Collaborators from './components/CollaboratorsSection/collaborators.jsx';
 import Footer from './components/Footer/Footer.jsx';
 
 /* sivut */
-const Home = () => { return <><HeroSection /><AboutSection /><ServicesSection /><GallerySection /><ContactSection /></> }
+const Home = () => { return <><HeroSection /><AboutSection /><ServicesSection /><GallerySection /><ContactSection /><Collaborators /></> }
 import DJKaraoke from './pages/DJKaraoke.jsx';
 import Yksityistilaisuudet from './pages/Yksityistilaisuudet.jsx';
 import Yritysjuhlat from './pages/Yritysjuhlat.jsx';

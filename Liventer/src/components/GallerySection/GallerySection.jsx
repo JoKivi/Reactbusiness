@@ -1,50 +1,61 @@
-import React from 'react';
-import { Link as LinkRouter } from 'react-router-dom'
-import './gallerySection.css'
-
-import img0 from '../../images/img0.webp'
-import img1 from '../../images/img1.webp'
-import img2 from '../../images/img2.webp'
-import img3 from '../../images/img3.webp'
-import img4 from '../../images/img4.webp'
-import img5 from '../../images/img5.webp'
-import img6 from '../../images/img0.webp'
-import img7 from '../../images/img1.webp'
-import img8 from '../../images/img2.webp'
-import img9 from '../../images/img3.webp'
-import img10 from '../../images/img4.webp'
-import img11 from '../../images/img5.webp'
-import img12 from '../../images/img0.webp'
-import img13 from '../../images/img1.webp'
-import img14 from '../../images/img2.webp'
-import img15 from '../../images/img3.webp'
-import img16 from '../../images/img4.webp'
-import img17 from '../../images/img5.webp'
-
-const gallerySectionImages = [img0, img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13, img14, img15, img16, img17]
+import React, { useState, useEffect } from 'react';
+import { Link as LinkRouter } from 'react-router-dom';
+import { getStorage, ref, listAll, getDownloadURL } from 'firebase/storage';
+import './gallerySection.css';
 
 const Slider = () => {
+    const [images, setImages] = useState([]);
+
+    useEffect(() => {
+        const fetchImages = async () => {
+            try {
+                const storage = getStorage();
+                const imagesRef = ref(storage, "liventer-images/");
+                const result = await listAll(imagesRef);
+    
+                const fetchedImageUrls = await Promise.all(
+                    result.items.slice(0, 6).map(item => getDownloadURL(item))
+                );
+    
+                let imageUrls = [];
+                while (imageUrls.length < 18) {
+                    fetchedImageUrls.forEach(url => {
+                        if (imageUrls.length < 18) {
+                            imageUrls.push(url);
+                        }
+                    });
+                }
+    
+                setImages(imageUrls);
+            } catch (error) {
+                console.error("Error fetching images: ", error);
+            }
+        };
+    
+        fetchImages();
+    }, []);
+    
+
     return (
         <div className='slider gallerySliderSection'>
-            {gallerySectionImages.map((img, index) => 
-                <img key={index} src={img}/>
-            )}
+            {images.map((img, index) => (
+                <img key={index} src={img} alt={`Gallery image ${index + 1}`} />
+            ))}
         </div>
-    )
-}
+    );
+};
 
 const GallerySection = () => {
     return (
         <div name='gallerySection' className='gallerySection'>
-                <Slider/>
-                <div className="gallerySectionBtn">
-                    <LinkRouter to='/gallery'>
-                        <button>Avaa Galleria</button>
-                    </LinkRouter>
-                </div>
-
+            <Slider/>
+            <div className="gallerySectionBtn">
+                <LinkRouter to='/gallery'>
+                    <button>Avaa Galleria</button>
+                </LinkRouter>
+            </div>
         </div>
     );
-}
+};
 
 export default GallerySection;
