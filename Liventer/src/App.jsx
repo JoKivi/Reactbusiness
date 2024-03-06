@@ -8,7 +8,7 @@ import AboutSection from './components/aboutSection/about.jsx';
 import ServicesSection from './components/ServicesSection/ServicesSection.jsx';
 import GallerySection from './components/GallerySection/GallerySection.jsx';
 import ContactSection from './components/ContactsSection/ContactsSection.jsx';
-import Collaborators from './components/CollaboratorsSection/collaborators.jsx';
+import Collaborators from './components/CollaboratorsSection/Collaborators.jsx';
 import Footer from './components/Footer/Footer.jsx';
 
 /* sivut */
