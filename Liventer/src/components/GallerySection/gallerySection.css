@@ -86,10 +86,6 @@
           overflow: hidden;
      }
 
-     .gallerySliderSection img {
-          margin: 0 5px;
-     }
-
      .gallerySectionBtn button {
           font-size: 1.5em;
           padding: 15px 40px;
@@ -98,4 +94,6 @@
           background-color: rgba(0, 0, 0, 0.8);
           color: #d4d4d4;
      }
+
+  
  }
