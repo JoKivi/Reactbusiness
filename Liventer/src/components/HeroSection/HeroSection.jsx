@@ -7,13 +7,21 @@ function HeroSection() {
     const heroTextRef = useRef(null);
     FadeEffect(heroTextRef);
 
+    const handleEmailOpen = () => {
+        const email = 'samppa@liventer.fi'; 
+        const subject = encodeURIComponent('Tilauksen aihe'); 
+        const body = encodeURIComponent('Hei,\n\nOlen kiinnostunut tuotteistanne. Haluaisin saada lisätietoa seuraavista tuotteista: [...]'); 
+    
+        window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
+    };
+
     return (
         <section className="hero" id="hero" name='heroSection'>
             <div className="container">
                 <div className="hero-text fade-zoom-in" ref={heroTextRef}>
                     <h2 className="hero-subtitle">Tapahtumat toiveidesi mukaan</h2>
                     <h1 className="hero-title">Liventer Group Oy</h1>
-                    <LinkRouter to="/ContactForm" className="hero-button" >TILAA</LinkRouter>
+                    <button onClick={handleEmailOpen} className="hero-button">TILAA</button>
                 </div>
             </div>
         </section>

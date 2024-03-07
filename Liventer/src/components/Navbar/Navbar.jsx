@@ -24,6 +24,20 @@ function Navbar() {
         navigate('/'); 
     };
 
+    const handleEmailOpen = () => {
+        const email = 'samppa@liventer.fi'; 
+        const subject = encodeURIComponent('Tilauksen aihe'); 
+        const body = encodeURIComponent('Hei,\n\nOlen kiinnostunut tuotteistanne. Haluaisin saada lisätietoa seuraavista tuotteista: [...]'); 
+    
+        window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
+    
+        if (window.innerWidth < 1150) {
+            setShowNav(false); 
+        } else {
+            setShowNav(true); 
+        }
+    };
+
     window.addEventListener('resize', () => window.innerWidth > 1150 ? setShowNav(true) : setShowNav(false) )
     window.addEventListener('load', () => window.innerWidth > 1150 ? setShowNav(true) : setShowNav(false) )
 
@@ -43,7 +57,7 @@ function Navbar() {
                 <li onClick={() => scrollToPage('services') }>Palvelut</li>
                 <li onClick={() => scrollToPage('gallerySection') }>Galleria</li>
                 <li onClick={() => scrollToPage('contact') }>Yhteystiedot</li>
-                <button onClick={() => {navigate('/ContactForm'), window.innerWidth < 1150 ? setShowNav(false) : setShowNav(true)} }>Tilaa</button>
+                <button onClick={handleEmailOpen}>Tilaa</button>
             </ul>
         </div>
     );
