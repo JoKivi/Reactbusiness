@@ -10,7 +10,7 @@ function HeroSection() {
     const handleEmailOpen = () => {
         const email = 'samppa@liventer.fi'; 
         const subject = encodeURIComponent('Tilauksen aihe'); 
-        const body = encodeURIComponent('[...]'); 
+        const body = encodeURIComponent(''); 
     
         window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
     };
