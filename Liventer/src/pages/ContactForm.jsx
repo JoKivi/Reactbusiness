@@ -19,7 +19,7 @@ function ContactForm() {
     const handleSubmit = (e) => {
         e.preventDefault();
     
-        const url = 'http://liventer.fi/home/gvyzlrgc/public_html/check_contact.php';
+        const url = 'https://liventer.fi/home/gvyzlrgc/public_html/check_contact.php';
     
         const formDataToSend = new FormData();
         formDataToSend.append('user_name', formData.name);
