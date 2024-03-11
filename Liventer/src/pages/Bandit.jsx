@@ -17,7 +17,7 @@ function DJKaraoke() {
                     Taidokas soitto, parhaista (1960-2020-lukujen) hiteistä koostuva monipuolinen ohjelmisto sekä
                     Lotan mukaansa tempaava esiintyminen ovat hurmanneet tuhansia kuulijoita ympäri suomen ja
                     saaneet tilaajat buukkaamaan bändin yhä uudestaan ja uudestaan tilaisuuksiinsa.
-                    Lo#a Skog Band saa lähes poikkeukse#a aina keikoilla kiitosta monipuolisesta ohjelmistosta ja
+                    Lotta Skog Band saa lähes poikkeuksetta aina keikoilla kiitosta monipuolisesta ohjelmistosta ja
                     huikeasta lavameiningistä.</p>
                     <br />
                     <a href="http://www.lottaskog.fi">Kotisivut</a>
