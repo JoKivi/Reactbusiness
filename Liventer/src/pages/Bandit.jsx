@@ -12,7 +12,7 @@ function DJKaraoke() {
                     <h2>LOTTA SKOG BAND</h2>
                     <br />
                     <p>Lotta Skog Band on kovan luokan energinen bilebändi, joka on vastannut satojen hääparien,
-                    yksityishenkilöiden, firmojen ja ravintoloi#en täysistä tanssilavoista ja onnistuneista
+                    yksityishenkilöiden, firmojen ja ravintoloiden täysistä tanssilavoista ja onnistuneista
                     bileilloista jo vuosien ajan.
                     Taidokas soitto, parhaista (1960-2020-lukujen) hiteistä koostuva monipuolinen ohjelmisto sekä
                     Lotan mukaansa tempaava esiintyminen ovat hurmanneet tuhansia kuulijoita ympäri suomen ja
