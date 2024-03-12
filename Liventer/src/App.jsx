@@ -22,6 +22,7 @@ import Gallery from './pages/Gallery.jsx';
 import Regon from './pages/Regon.jsx';
 import Esitystekniikka from './pages/Esitystekniikka.jsx';
 import Bandit from './pages/Bandit.jsx';
+import Juhlatilat from './pages/Juhlatilat.jsx';
 
 function App() {
 
@@ -44,6 +45,7 @@ function App() {
           <Route path='/Regon' element={<Regon />} />
           <Route path='/Esitystekniikka' element={<Esitystekniikka />} />
           <Route path='/Bandit' element={<Bandit />} />
+          <Route path='/Juhlatilat' element={<Juhlatilat />} />
         </Routes>
       </div>
 

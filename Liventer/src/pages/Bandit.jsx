@@ -1,7 +1,7 @@
 import React from 'react';
 import '../Styles/Pages.css';
 
-function DJKaraoke() {
+function Bandit() {
     return (
         <>
             <div className="ohjelma-container">
@@ -74,4 +74,4 @@ function DJKaraoke() {
     );
 }
 
-export default DJKaraoke;
+export default Bandit;
