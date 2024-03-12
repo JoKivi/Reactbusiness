@@ -23,6 +23,9 @@ import Regon from './pages/Regon.jsx';
 import Esitystekniikka from './pages/Esitystekniikka.jsx';
 import Bandit from './pages/Bandit.jsx';
 import Juhlatilat from './pages/Juhlatilat.jsx';
+import FratParty from './pages/FratParty.jsx';
+import Glow from './pages/Glow.jsx';
+
 
 function App() {
 
@@ -46,6 +49,10 @@ function App() {
           <Route path='/Esitystekniikka' element={<Esitystekniikka />} />
           <Route path='/Bandit' element={<Bandit />} />
           <Route path='/Juhlatilat' element={<Juhlatilat />} />
+          <Route path='/FratParty' element={<FratParty />} />
+          <Route path='/Glow' element={<Glow />} />
+
+
         </Routes>
       </div>
 

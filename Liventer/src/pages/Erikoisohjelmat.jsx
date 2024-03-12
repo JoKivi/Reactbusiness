@@ -36,48 +36,54 @@ function Erikoisohjelmat() {
                 <p><strong>ERIKOISOHJELMIA</strong></p>
                 <ul>
                     <br />
-                    <li><strong>Frat Party</strong><br />
-
+                    <li><Link to="/FratParty" ><strong>Frat Party</strong></Link><br />
+                        <p></p>
                     </li>
                     <br />
-                    <li><strong>Glow</strong><br />
-
+                    <li><Link to="/Glow" ><strong>Glow</strong></Link><br />
+                        <p></p>
                     </li>
                     <br />
                     <li><strong>Ysäri-Pois</strong><br />
-                        Kahden DJ:n erikoisohjelma, jossa soitetaan parasta ysärimusaa kahden soittajan battlena,
-                        vuorotellen ja yhdessä. Paljon spiikkiä ja juontamista, toiveita otetaan vastaan ja yleisö on
-                        varmasti mukana. Kaksi tiskijukkaa, kohde- ja efektivaloa, soittimet, mikrofonit yms.
-                        laitteisto. Käytetään talon äänentoistoa, mutta tarvittaessa tuodaan oma äänentoisto paikalle.
-                        Mahdollisuuksien mukaan käytetään myös savukonetta.
+                        <p>Tämä DJ-kaksikko takaa sen, että musiikin siirtyminen tämän vuosituhannen puolelle oli yksi
+                            ihmiskunnan suurimmista virheistä. Kyseinen ilta on paluu aikaan jolloin kaikki oli vielä
+                            paremmin, sekä omistettu kaikille niille joiden nostalgiajalkaa vipattaa vimmatusti.
+                            Tapahtuma pitää sisällään juonnettuja leikkimielisiä kilpailuja, sekä kuumaa reivaamista
+                            parhaiden ysärihittien tahtiin.</p>
                     </li>
                     <br />
                     <li><strong>Video-disco</strong><br />
-                        Musiikki soitetaan laadukkaiden videoiden kera. Käytännössä toteutetaan siten, että paikalle
-                        tuodaan yksi tai useampi iso tv-näyttö, vähintään 70 tuumainen. Lisäksi ravintolan omat näytöt
-                        liitetään mukaan järjestelmään. Mukana kohde- ja efektivaloa, savukonetta käytetään
-                        mahdollisuuksien mukaan.
+                        <p>Yksi aliarvostetuimmista bilekonsepteista. Video-disco tarjoaa äänen lisäksi myös
+                            kuvamateriaalia yhdeltä tai useammalta screeniltä. Perusideana siis se, että DJ soittaa
+                            musiikkia kuten normaalilla keikalla ja samaan aikaan taustalla olevilla screeneillä
+                            pyörii soitettavien kappaleiden musiikkivideot. Pakettiin kuuluu myös kohde- ja
+                            efektivalo, sekä savukone.
+                            Musiikki on tässä konseptissa mahdollisuus valita 90-luvulta tähän päivään asti. Tähän
+                            liittyen meillä on tarjolla kaksi eri teemailtaa nimeltään FRESH ja THROWBACK. Kuten
+                            nimestä voi päätellä FRESH tarjoaa iltaan tämän päivän kuumimmat ja tuoreimmat
+                            hitit, kun taas THROWBACK vie juhlakansan takaisin 90-luvun karkeloihin. Pystymme
+                            myös tarvittaessa rajaamaan musiikin asiakkaan toiveiden mukaan</p>
                     </li>
                     <br />
                     <li><Link to="/Regon" ><strong>Regon Rave</strong></Link><br />
-                        Kahden vuosikymmenen kokemuksella laadukasta ja tanssittavaa yökerhomusaa ravintolaanne. Bileet
-                        ovat takuuvarmat. Mukaan tarvittaessa kohde- ja efektivaloa.
+                        <p>Kahden vuosikymmenen kokemuksella laadukasta ja tanssittavaa yökerhomusaa ravintolaanne. Bileet
+                            ovat takuuvarmat. Mukaan tarvittaessa kohde- ja efektivaloa.</p>
                     </li>
                     <br />
                     <li><strong>dj Kimble</strong><br />
-                        Ysäribileet, spiikkausta ja juontoa vankalla kokemuksella. Myös erilaiset juontotehtävät
-                        tilaisuuteen kuin tilaisuuteen suomeksi, ruotsiksi ja englanniksi, jopa saksaksi.
+                        <p>Ysäribileet, spiikkausta ja juontoa vankalla kokemuksella. Myös erilaiset juontotehtävät
+                            tilaisuuteen kuin tilaisuuteen suomeksi, ruotsiksi ja englanniksi, jopa saksaksi.</p>
                     </li>
                     <br />
 
                     <br />
                     <li><strong>The Sinkkubileet</strong><br />
-                        Järjestämme ravintolaanne isot sinkku-bileet yhdessä paikallisten opiskelijajärjestöjen kanssa.
-                        Tuomme ravintolan täyteen sinkkuja, järjestämme kilpailuja ja tempauksia. Riippuen ravintolan
-                        koosta 1–3 soittajaa ja juontaja/houst Kilpailuissa upeat palkinnot ja kalenterivuoden
-                        sinkkubileet huipentuvat yhteen isoon sinkkubile-tapahtumaan! Tervetuloa viihtymään ja
-                        pariutumaan. Käytämme talon äänentoistoa ja valojärjestelmiä. Valaistukseen tuomme mukaan kohde-
-                        ja efektivaloa.
+                        <p>Järjestämme ravintolaanne isot sinkku-bileet yhdessä paikallisten opiskelijajärjestöjen kanssa.
+                            Tuomme ravintolan täyteen sinkkuja, järjestämme kilpailuja ja tempauksia. Riippuen ravintolan
+                            koosta 1–3 soittajaa ja juontaja/houst Kilpailuissa upeat palkinnot ja kalenterivuoden
+                            sinkkubileet huipentuvat yhteen isoon sinkkubile-tapahtumaan! Tervetuloa viihtymään ja
+                            pariutumaan. Käytämme talon äänentoistoa ja valojärjestelmiä. Valaistukseen tuomme mukaan kohde-
+                            ja efektivaloa.</p>
                     </li>
                 </ul>
             </div>

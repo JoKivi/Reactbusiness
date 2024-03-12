@@ -20,7 +20,7 @@ const Services = () => {
         return title
             .normalize("NFD") // Normalisoi ääkköset erillisiksi merkeiksi
             .replace(/[\u0300-\u036f]/g, "") // Poistaa diakriittiset merkit (kuten ääkkösten aksentit)
-            .replace(/\s+/g, '-') // Korvaa välilyönnit väliviivalla
+            .replace(/\s+/g, '') // Poistaa välilyönnit 
             .replace(/[^a-z0-9\-]/gi, ''); // Poistaa kaikki muut merkit paitsi kirjaimet, numerot ja väliviivat
     }
 

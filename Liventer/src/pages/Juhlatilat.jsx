@@ -6,7 +6,7 @@ function Juhlatilat() {
     return (
         <div className="ohjelma-container">
             <div className="ohjelma-image">
-                <img src="/img/klondike.webp" alt="Klondike" />
+                <img src="/img/klondyke.webp" alt="Klondyke" />
             </div>
             <div className="ohjelma-content">
                 <h2>KLONDYKE</h2>
