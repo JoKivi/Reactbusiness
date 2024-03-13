@@ -4,6 +4,9 @@ import './Collaborators.css';
 const Collaborators = () => {
     const logos = [
         { id: 1, src: './logos/FunFun.png', alt: 'FunFun logo' },
+        { id: 2, src: './logos/rajupaja.png', alt: 'Rajupaja logo' },
+        { id: 3, src: './logos/tuusula.png', alt: 'Tuusula logo' },
+
     ];
 
     return (

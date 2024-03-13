@@ -66,16 +66,7 @@ function Erikoisohjelmat() {
                     </li>
                     <br />
                     <li><Link to="/Regon" ><strong>Regon Rave</strong></Link><br />
-                        <p>Kahden vuosikymmenen kokemuksella laadukasta ja tanssittavaa yökerhomusaa ravintolaanne. Bileet
-                            ovat takuuvarmat. Mukaan tarvittaessa kohde- ja efektivaloa.</p>
                     </li>
-                    <br />
-                    <li><strong>dj Kimble</strong><br />
-                        <p>Ysäribileet, spiikkausta ja juontoa vankalla kokemuksella. Myös erilaiset juontotehtävät
-                            tilaisuuteen kuin tilaisuuteen suomeksi, ruotsiksi ja englanniksi, jopa saksaksi.</p>
-                    </li>
-                    <br />
-
                     <br />
                     <li><strong>The Sinkkubileet</strong><br />
                         <p>Järjestämme ravintolaanne isot sinkku-bileet yhdessä paikallisten opiskelijajärjestöjen kanssa.
