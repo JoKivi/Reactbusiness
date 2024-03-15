@@ -67,7 +67,7 @@ function Bandit() {
                     <br />
                     Tsekkaa myös bändin instagram: <a href="https://www.instagram.com/Chapter11rocks/">Chapter11rocks</a>
                     <br />
-                    sekä <a href="www.chapter11.fi">Kotisivut</a>
+                    sekä <a href="http://www.chapter11.fi">Kotisivut</a>
                 </div>
             </div>
         </>
