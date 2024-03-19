@@ -14,8 +14,11 @@ html {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
-  overflow-x: hidden;
 
+}
+
+.main {
+  overflow-x: hidden;
 }
 
 /* FADE EFFECT START*/
