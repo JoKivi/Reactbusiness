@@ -4,7 +4,7 @@ import './Contacts.css';
 const ContactsSection = () => {
     return (
         <div className="contacts-container" name='contacts'>
-            <div className="contact">
+            {/* <div className="contact">
                 <img src="/img/Okko.webp" alt="Contact 1" className="contact-image" />
                 <div className="contact-info">
                     <h2>OKKO IKONEN</h2>
@@ -13,7 +13,7 @@ const ContactsSection = () => {
                     <p>okko.ikonen@liventer.fi</p>
                     <p>+358 50 3566 924</p>
                 </div>
-            </div>
+            </div> */}
             <div className="contact">
                 <img src="/img/Samppa.webp" alt="Contact 2" className="contact-image" />
                 <div className="contact-info">
