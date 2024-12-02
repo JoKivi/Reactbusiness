@@ -27,8 +27,8 @@
 }
 
 .navbar .logo img {
-    max-height: 10%; 
-    height: auto; 
+    height: 10%; 
+    width: auto;
     }
 
 .navbar  .nav-list {
