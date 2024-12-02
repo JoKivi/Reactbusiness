@@ -44,7 +44,7 @@ function Navbar() {
     return (
         <div className="navbar">
             <div className="logo" onClick={handleLogoClick}>
-                <img src="/img/liventer_s.svg" alt="Liventer Group Logo" />
+                <img src="/img/GM_productions.pdf" alt="GM Productions Oy Logo" />
             </div>
             <div className="nav-manage">
                 { showNav && <AiOutlineClose className='icon' onClick={() => setShowNav(!showNav)} /> } {/* showNav true show close icon */}

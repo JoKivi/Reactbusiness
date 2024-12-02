@@ -20,7 +20,7 @@ function HeroSection() {
             <div className="container">
                 <div className="hero-text fade-zoom-in" ref={heroTextRef}>
                     <h2 className="hero-subtitle">Tapahtumat toiveidesi mukaan</h2>
-                    <h1 className="hero-title">Liventer Group Oy</h1>
+                    <h1 className="hero-title">GM Productions Oy</h1>
                     <button onClick={handleEmailOpen} className="hero-button">TILAA</button>
                 </div>
             </div>
