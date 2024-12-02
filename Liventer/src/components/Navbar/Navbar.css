@@ -23,13 +23,16 @@
 }
 .navbar .logo {
     cursor: pointer;
-    width: auto;
-    height: 30%;
+
 }
 
 .navbar .logo img {
-    width: 500px;
-}
+    .navbar .logo img {
+        max-height: 100%; 
+        height: auto; 
+        object-fit: contain;
+    }
+    }
 
 .navbar  .nav-list {
 
