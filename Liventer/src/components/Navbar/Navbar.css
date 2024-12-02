@@ -23,6 +23,8 @@
 }
 .navbar .logo {
     cursor: pointer;
+    width: auto;
+    height: 30%;
 }
 
 .navbar .logo img {
