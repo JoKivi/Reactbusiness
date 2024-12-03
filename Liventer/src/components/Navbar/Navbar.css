@@ -87,8 +87,8 @@
     }
 
     .navbar .logo img {
-        width: auto;
-        height: 100px;
+        width: 50%;
+        height: auto;
     }
     
     .nav-manage {
