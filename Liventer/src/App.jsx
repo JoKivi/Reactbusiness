@@ -19,7 +19,7 @@ import Yritysjuhlat from './pages/Yritysjuhlat.jsx';
 import Erikoisohjelmat from './pages/Erikoisohjelmat.jsx';
 import Haat from './pages/Haat.jsx';
 import Gallery from './pages/Gallery.jsx';
-import DJRegon from './pages/Regon.jsx';
+import DJRegon from './pages/DJRegon.jsx';
 import Esitystekniikka from './pages/Esitystekniikka.jsx';
 import Bandit from './pages/Bandit.jsx';
 import Juhlatilat from './pages/Juhlatilat.jsx';
