@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import './ServicesSection.css';
 
 const services = [
-    { id:0, img: "./img/Regon-sivu.webp", title: "DJ Regon" },
+    { id:0, img: "/img/Regon-sivu.webp", title: "DJ Regon" },
     { id:1, img: "./img/esitystekniikka.webp", title: "Esitystekniikka" },
     { id:2, img: "./img/erikois.webp", title: "Erikoisohjelmat" },
     { id:3, img: "./img/yksityis.webp", title: "Yksityistilaisuudet" },
