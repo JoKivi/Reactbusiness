@@ -13,7 +13,9 @@ function DJRegon() {
                 <p>DJ Regon on ilmiömäisen energinen esiintyjä, joka sytyttää tunnelman klubeilla, festivaaleilla ja yksityistilaisuuksissa. 
                     Hänen musiikillinen monipuolisuutensa ja taitava eri tyylien yhdistely pitävät yleisön jatkuvassa liikkeessä – et koskaan tiedä, 
                     mitä seuraavaksi tapahtuu!
-                    <br />
+                </p>
+
+                <p>
                     DJ Regonin keikoilla bilevaihde kääntyy täysille heti ensimmäisestä biitistä. 
                     Hän ei vain soita musiikkia, vaan elää ja hengittää jokaisen setin mukana, luoden ainutlaatuisen, mukaansatempaavan fiiliksen. 
                     Olipa kyseessä intiimi klubikeikka tai tuhansien ihmisten festarilava, energia on aina huipussaan ja juhlat jäävät varmasti mieleen.
