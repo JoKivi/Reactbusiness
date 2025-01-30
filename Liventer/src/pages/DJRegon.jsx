@@ -8,7 +8,8 @@ function DJRegon() {
                 <img src="/img/Regon-etu.webp" alt="DJ Regon" />
             </div>
             <div className="ohjelma-content">
-                <h2>DJ REGON – RÄJÄHTÄVÄÄ ENERGIAA JA UNOHTUMATTOMIA BILEITÄ</h2>
+            <br /><br />
+            <h2>DJ REGON – RÄJÄHTÄVÄÄ ENERGIAA JA UNOHTUMATTOMIA BILEITÄ</h2>
                 <br />
                 <p>DJ Regon on ilmiömäisen energinen esiintyjä, joka sytyttää tunnelman klubeilla, festivaaleilla ja yksityistilaisuuksissa. 
                     Hänen musiikillinen monipuolisuutensa ja taitava eri tyylien yhdistely pitävät yleisön jatkuvassa liikkeessä – et koskaan tiedä, 
