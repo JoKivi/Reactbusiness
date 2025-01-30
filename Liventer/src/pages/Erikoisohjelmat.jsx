@@ -35,14 +35,12 @@ function Erikoisohjelmat() {
                 <br />
                 <p><strong>ERIKOISOHJELMIA</strong></p>
                 <ul>
-                    <br />
-                    <li><Link to="/FratParty" ><strong>Frat Party</strong></Link><br />
-                        <p></p>
-                    </li>
+                 
                     <br />
                     <li><Link to="/Glow" ><strong>Glow</strong></Link><br />
                         <p></p>
                     </li>
+       
                     <br />
                     <li><strong>Ysäri-Pois</strong><br />
                         <p>Tämä DJ-kaksikko takaa sen, että musiikin siirtyminen tämän vuosituhannen puolelle oli yksi
@@ -51,6 +49,7 @@ function Erikoisohjelmat() {
                             Tapahtuma pitää sisällään juonnettuja leikkimielisiä kilpailuja, sekä kuumaa reivaamista
                             parhaiden ysärihittien tahtiin.</p>
                     </li>
+           
                     <br />
                     <li><strong>Video-disco</strong><br />
                         <p>Yksi aliarvostetuimmista bilekonsepteista. Video-disco tarjoaa äänen lisäksi myös
@@ -64,19 +63,8 @@ function Erikoisohjelmat() {
                             hitit, kun taas THROWBACK vie juhlakansan takaisin 90-luvun karkeloihin. Pystymme
                             myös tarvittaessa rajaamaan musiikin asiakkaan toiveiden mukaan</p>
                     </li>
-                    <br />
-                    <li><Link to="/Regon" ><strong>Regon Rave</strong></Link><br />
-                    </li>
-                    <br />
-                    <li><strong>The Sinkkubileet</strong><br />
-                        <p>Järjestämme ravintolaanne isot sinkku-bileet yhdessä paikallisten opiskelijajärjestöjen kanssa.
-                            Tuomme ravintolan täyteen sinkkuja, järjestämme kilpailuja ja tempauksia. Riippuen ravintolan
-                            koosta 1–3 soittajaa ja juontaja/houst Kilpailuissa upeat palkinnot ja kalenterivuoden
-                            sinkkubileet huipentuvat yhteen isoon sinkkubile-tapahtumaan! Tervetuloa viihtymään ja
-                            pariutumaan. Käytämme talon äänentoistoa ja valojärjestelmiä. Valaistukseen tuomme mukaan kohde-
-                            ja efektivaloa.</p>
-                    </li>
-                </ul>
+                
+                 </ul>
             </div>
         </div>
     );

@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom'
 import './ServicesSection.css';
 
 const services = [
-    { id:0, img: "./img/esitystekniikka.webp", title: "Esitystekniikka" },
-    { id:1, img: "./img/erikois.webp", title: "Erikoisohjelmat" },
-    { id:2, img: "./img/yksityis.webp", title: "Yksityistilaisuudet" },
-    { id:3, img: "./img/bandit.webp", title: "Bändit" },
-    { id:4, img: "./img/karaoke.webp", title: "DJ/Karaoke" },
-    { id:5, img: "./img/fratparty.webp", title: "Frat Party" },
+    { id:0, img: "./img/Regon-sivu.wepg", title: "DJ Regon" },
+    { id:1, img: "./img/esitystekniikka.webp", title: "Esitystekniikka" },
+    { id:2, img: "./img/erikois.webp", title: "Erikoisohjelmat" },
+    { id:3, img: "./img/yksityis.webp", title: "Yksityistilaisuudet" },
+    { id:4, img: "./img/bandit.webp", title: "Bändit" },
+    { id:5, img: "./img/karaoke.webp", title: "DJ/Karaoke" },
     { id:6, img: "./img/haat.webp", title: "Häät" },
     { id:7, img: "./img/juhlatilat.webp", title: "Juhlatilat" }
 
