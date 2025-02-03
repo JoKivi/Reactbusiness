@@ -7,7 +7,7 @@ function Footer() {
             <div className="footer-content">
                 <div className="footer-section">
                     <div>
-                        <strong>Postiosoite:</strong> Visatie 24 A 6, 04200 KERAVA
+                        <strong>Postiosoite:</strong> Visatie 24 A 6, 04260 KERAVA
                     </div>
                     <div>
                         <strong>Käyntiosoite:</strong> Kuusiaidankuja 2, Halli 14, 04260 KERAVA
