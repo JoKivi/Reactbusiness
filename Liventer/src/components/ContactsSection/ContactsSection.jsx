@@ -20,7 +20,7 @@ const ContactsSection = () => {
                     <h2>SAMPPA SILVAANI</h2>
                     <p><strong>Tuotantopäällikkö</strong></p>
                     <br />
-                    <p>samppa@liventer.fi</p>
+                    <p>samppa@gmproductions.fi</p>
                     <p>+358 40 5455 417</p>
                 </div>
             </div>
