@@ -25,7 +25,7 @@ function Navbar() {
     };
 
     const handleEmailOpen = () => {
-        const email = 'samppa@liventer.fi'; 
+        const email = 'samppa@gmproductions.fi'; 
         const subject = encodeURIComponent('Tilauksen aihe'); 
         const body = encodeURIComponent(''); 
     
@@ -44,7 +44,7 @@ function Navbar() {
     return (
         <div className="navbar">
             <div className="logo" onClick={handleLogoClick}>
-                <img src="/img/GM Productions tekstilogo.png" alt="GM Productions Oy Logo" />
+                <img src="/img/GM_tekstilogo.webp" alt="GM Productions Oy Logo" />
             </div>
             <div className="nav-manage">
                 { showNav && <AiOutlineClose className='icon' onClick={() => setShowNav(!showNav)} /> } {/* showNav true show close icon */}
