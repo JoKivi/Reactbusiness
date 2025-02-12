@@ -24,7 +24,7 @@ function Footer() {
                 </div>
             </div>
             <div className="footer-bottom">
-                <div>&copy; 2024 GM Productions Oy</div>
+                <div>&copy; 2025 GM Productions Oy</div>
                 <div>Designed by <strong>GM Productions Oy</strong></div>
             </div>
         </footer>
